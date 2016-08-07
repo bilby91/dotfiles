@@ -27,3 +27,6 @@ brew 'v8'
 
 # Install `python3` with `pip3`
 brew 'python3'
+
+tap 'thoughtbot/formulae'
+brew 'rcm'
