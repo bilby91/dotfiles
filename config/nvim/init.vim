@@ -3,7 +3,7 @@ set nocompatible
 
 filetype off
 
-source plugins.vim
+source ~/.config/nvim/plugins.vim
 
 let mapleader = " "
 
@@ -63,11 +63,8 @@ map <Leader>w <C-w>
 map <Leader>s :w<CR>
 
 " Search
-
-map <Leader>F <Leader>t<CR>:Ag
-map <Leader>f :Ag
-vnoremap <Leader>F y<CR>:tabnew<CR>:Ag <C-R><CR>"
-vnoremap <Leader>f y:Ag <C-R>"
+map <Leader>f :CtrlSF 
+vnoremap <Leader>f y<CR>:CtrlSF <C-R>"<CR>
 
 vnoremap // y/<C-R>"<CR>
 

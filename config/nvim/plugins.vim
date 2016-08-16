@@ -35,10 +35,17 @@ Plug 'wincent/command-t'
 Plug 'matze/vim-move'
 Plug 'terryma/vim-multiple-cursors'
 
+" Go programming language support
+Plug 'fatih/vim-go'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 
 Plug 'fntlnz/atags.vim'
+
+" An ack/ag/pt powered code search and view tool, like ack.vim or :vimgrep but together with more context, and let you edit in-place with powerful edit mode.
+Plug 'dyng/ctrlsf.vim'
 
 " Add plugins to &runtimepath
 call plug#end()

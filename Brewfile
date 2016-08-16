@@ -30,3 +30,5 @@ brew 'python3'
 
 tap 'thoughtbot/formulae'
 brew 'rcm'
+
+brew 'go'
