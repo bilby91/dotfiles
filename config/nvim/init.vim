@@ -12,6 +12,7 @@ let g:ackprg = 'ag --vimgrep'
 let g:nerdtree_tabs_open_on_console_startup = 0
 let NERDTreeQuitOnOpen = 0
 let NERDTreeShowHidden = 1
+let NERDTreeIgnore = ['\.pyc$', '_trial_temp(.)*/']
 
 let g:CtrlSpaceSearchTiming = 500
 
@@ -120,6 +121,10 @@ noremap 88 8gt
 noremap 99 9gt
 noremap 00 :tablast<cr>
 
+" Python3 Support
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
+
 " Autocomplete
 
 :set dictionary="/usr/dict/words"
@@ -128,6 +133,8 @@ let g:deoplete#enable_at_startup=1
 
 " disable autocomplete
 let g:deoplete#disable_auto_complete = 1
+
+let g:tsuquyomi_completion_detail = 1
 
 let g:deoplete#sources={}
 let g:deoplete#sources._    = ['buffer', 'file', 'ultisnips']
@@ -155,7 +162,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Autogenerate ctags
-autocmd BufWritePost * call atags#generate()
+"autocmd BufWritePost * call atags#generate()
 
 au FocusLost * silent! wa
 au BufNewFile * set noeol

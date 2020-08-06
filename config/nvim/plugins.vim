@@ -34,6 +34,9 @@ Plug 'bling/vim-airline'
 Plug 'wincent/command-t'
 Plug 'matze/vim-move'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+Plug 'Shougo/vimproc.vim'
 
 " Go programming language support
 Plug 'fatih/vim-go'
@@ -46,6 +49,8 @@ Plug 'fntlnz/atags.vim'
 
 " An ack/ag/pt powered code search and view tool, like ack.vim or :vimgrep but together with more context, and let you edit in-place with powerful edit mode.
 Plug 'dyng/ctrlsf.vim'
+
+Plug 'hashivim/vim-terraform'
 
 " Add plugins to &runtimepath
 call plug#end()

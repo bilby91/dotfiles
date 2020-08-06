@@ -32,3 +32,4 @@ tap 'thoughtbot/formulae'
 brew 'rcm'
 
 brew 'go'
+brew 'unison'
