@@ -5,7 +5,8 @@
 vim.g.lazyvim_ruby_lsp = "ruby_lsp"
 vim.g.lazyvim_ruby_formatter = "rubocop"
 
--- TODO:
+-- Configure `neotest` with some simple keymaps
+--
 vim.cmd([[
     command! NeotestSummary lua require("neotest").summary.toggle()
     command! NeotestFile lua require("neotest").run.run(vim.fn.expand("%"))
