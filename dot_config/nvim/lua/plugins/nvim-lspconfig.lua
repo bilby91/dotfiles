@@ -9,6 +9,9 @@ return {
         eslint = {
           enabled = true,
         },
+        gopls = {
+          enabled = true,
+        },
       },
     },
   },

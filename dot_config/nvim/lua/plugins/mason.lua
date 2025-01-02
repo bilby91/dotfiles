@@ -14,6 +14,16 @@ return {
       },
     },
   },
+
+  -- TODO: Review if this plugin is really needed
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    config = function()
+      require("mason").setup()
+      require("mason-nvim-dap").setup()
+    end,
+  },
+  -- TODO: Review if this plugin is really needed
   {
     "williamboman/mason-lspconfig.nvim",
   },
