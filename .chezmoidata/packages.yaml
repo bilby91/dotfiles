@@ -1,0 +1,10 @@
+packages:
+  debian:
+    apt:
+    - 'zsh'
+  darwin:
+    brews:
+    - 'colima'
+    - 'docker-buildx'
+    - 'fzf'
+    - 'neovim'

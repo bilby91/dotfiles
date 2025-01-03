@@ -1,0 +1,12 @@
+{{- $osid := .chezmoi.os -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+#!/bin/bash
+
+{{ if eq .osid "linux-debian" }}
+{{ range .packages.debian.apt -}}
+apt install {{ . | quote }}
+{{ end -}}
+{{ end -}}
+
