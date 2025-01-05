@@ -1,12 +1,10 @@
-{{- $osid := .chezmoi.os -}}
-{{- if hasKey .chezmoi.osRelease "id" -}}
-{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
-{{- end -}}
+{{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-{{ if eq $osid "linux-ubuntu" }}
+{{ if eq .osid "linux-ubuntu" }}
 {{ range .packages.debian.apt -}}
 sudo apt install {{ . | quote }} -y
+{{ end -}}
 {{ end -}}
 {{ end -}}
 

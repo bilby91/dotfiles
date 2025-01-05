@@ -10,3 +10,5 @@ packages:
     - 'docker-buildx'
     - 'fzf'
     - 'neovim'
+    - 'lazygit'
+    casks: []

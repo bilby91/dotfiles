@@ -29,23 +29,23 @@ vim.api.nvim_set_keymap(
 
 -- Configure `dap` keymaps
 --
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>dd",
-  ":DapNew<CR>",
-  { desc = "Start a new DAP session", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap("n", "<leader>dc", ":DapContinue<CR>", { desc = "Continue", noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>dn", ":DapStepOver<CR>", { desc = "Step over", noremap = true, silent = true })
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>db",
-  ":DapToggleBreakpoint<CR>",
-  { desc = "Toggle breakpoint", noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>dt",
-  ":DapTerminate<CR>",
-  { desc = "Terminate DAP session", noremap = true, silent = true }
-)
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<leader>dd",
+--   ":DapNew<CR>",
+--   { desc = "Start a new DAP session", noremap = true, silent = true }
+-- )
+-- vim.api.nvim_set_keymap("n", "<leader>dc", ":DapContinue<CR>", { desc = "Continue", noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("n", "<leader>dn", ":DapStepOver<CR>", { desc = "Step over", noremap = true, silent = true })
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<leader>db",
+--   ":DapToggleBreakpoint<CR>",
+--   { desc = "Toggle breakpoint", noremap = true, silent = true }
+-- )
+-- vim.api.nvim_set_keymap(
+--   "n",
+--   "<leader>dt",
+--   ":DapTerminate<CR>",
+--   { desc = "Terminate DAP session", noremap = true, silent = true }
+-- )
