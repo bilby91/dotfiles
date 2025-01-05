@@ -4,9 +4,9 @@
 {{- end -}}
 #!/bin/bash
 
-{{ if eq .osid "linux-debian" }}
+{{ if eq $osid "linux-ubuntu" }}
 {{ range .packages.debian.apt -}}
-apt install {{ . | quote }}
+sudo apt install {{ . | quote }} -y
 {{ end -}}
 {{ end -}}
 

@@ -21,7 +21,7 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_from_right"
 # Optionally, if you set this to "random", it'll load a random theme each time that oh-my-zsh is loaded.
 ZSH_THEME='powerlevel10k/powerlevel10k'
 
-source "${HOMEBREW_PREFIX}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "${ZSH}/custom/plugins/zsh-syntax-highlighting"
 
 plugins=(git brew gem pod rvm z docker docker-compose kubectl aws)
 
@@ -33,9 +33,3 @@ setopt completealiases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/opt/asdf/asdf.sh ] && . /usr/local/opt/asdf/asdf.sh
 [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-# Completions
-fpath+=~/.oh-my-zsh/completions
-export FLYCTL_INSTALL="/Users/bilby91/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-export PATH="/Users/bilby91/.bin:$PATH"
