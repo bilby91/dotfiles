@@ -1,10 +1,9 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-{{ if eq .osid "linux-ubuntu" }}
-{{ range .packages.debian.apt -}}
-sudo apt install {{ . | quote }} -y
-{{ end -}}
+
+{{ if or (eq .osid "linux-ubuntu") (eq .osid "linux-debian") }}
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y {{ range .packages.debian.apt }}{{ . }} {{ end }}
 {{ end -}}
 {{ end -}}
 
