@@ -2,8 +2,8 @@ packages:
   debian:
     apt:
     - 'zsh'
-    - 'neovim'
     - 'build-essential'
+    # - 'neovim'
   darwin:
     brews:
     - 'colima'
