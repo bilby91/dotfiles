@@ -11,4 +11,5 @@ packages:
     - 'fzf'
     - 'neovim'
     - 'lazygit'
+    - 'flyctl'
     casks: []
