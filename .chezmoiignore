@@ -4,3 +4,7 @@
 .oh-my-zsh/themes/
 .oh-my-zsh/custom/**
 
+# Neovim auto-generated files (managed by LazyVim itself)
+.config/nvim/lazy-lock.json
+.config/nvim/lazyvim.json
+
