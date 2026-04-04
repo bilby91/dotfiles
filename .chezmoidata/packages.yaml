@@ -6,18 +6,35 @@ packages:
     # - 'neovim'
   darwin:
     brews:
-    - 'colima'
-    - 'docker-buildx'
+    # Core CLI tools
+    - 'chezmoi'
     - 'fzf'
-    - 'neovim'
-    - 'lazygit'
-    - 'flyctl'
     - 'fd'
     - 'ripgrep'
     - 'jq'
     - 'wget'
-    - 'asdf'
     - 'zsh-syntax-highlighting'
+    # Development tools
+    - 'neovim'
+    - 'lazygit'
     - 'cmake'
+    # Languages & runtimes
+    - 'node'
+    - 'python@3.13'
+    - 'go'
+    - 'dotnet'
+    - 'lua'
+    # DevOps / Cloud
+    - 'colima'
+    - 'docker-buildx'
+    - 'flyctl'
+    - 'kubernetes-cli'
+    - 'helm'
+    - 'helmfile'
+    - 'terraform'
+    - 'awscli'
+    # CLI tools
+    - 'gh'
     casks:
     - 'ghostty'
+    - '1password-cli'
