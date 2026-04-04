@@ -30,3 +30,6 @@ setopt completealiases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f /usr/local/opt/asdf/asdf.sh ] && . /usr/local/opt/asdf/asdf.sh
 [ -f /opt/homebrew/opt/asdf/libexec/asdf.sh ] && . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# Load local configuration if it exists
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
