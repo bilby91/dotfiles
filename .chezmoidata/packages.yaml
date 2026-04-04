@@ -24,6 +24,7 @@ packages:
     - 'go'
     - 'dotnet'
     - 'lua'
+    - 'bun'
     # DevOps / Cloud
     - 'colima'
     - 'docker-buildx'
@@ -35,6 +36,8 @@ packages:
     - 'awscli'
     # CLI tools
     - 'gh'
+    taps:
+    - 'oven-sh/bun'
     casks:
     - 'ghostty'
     - '1password-cli'
