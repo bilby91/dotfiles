@@ -12,4 +12,12 @@ packages:
     - 'neovim'
     - 'lazygit'
     - 'flyctl'
-    casks: []
+    - 'fd'
+    - 'ripgrep'
+    - 'jq'
+    - 'wget'
+    - 'asdf'
+    - 'zsh-syntax-highlighting'
+    - 'cmake'
+    casks:
+    - 'ghostty'
