@@ -18,6 +18,8 @@ packages:
     - 'neovim'
     - 'lazygit'
     - 'cmake'
+    - 'opencode'
+    - 'agent-browser'
     # Languages & runtimes
     - 'node'
     - 'python@3.13'
@@ -41,7 +43,6 @@ packages:
     casks:
     # Already installed
     - '1password-cli'
-    - '5ire'
     - 'ghostty'
     - 'goreleaser'
     - 'memo'
@@ -60,7 +61,7 @@ packages:
     - 'docker-desktop'
     - 'figma'
     - 'visual-studio-code'
-    - 'claude-code'
+    - 'claude-code@latest'
     # Media
     - 'spotify'
     - 'transmission'
