@@ -39,5 +39,38 @@ packages:
     taps:
     - 'oven-sh/bun'
     casks:
-    - 'ghostty'
+    # Already installed
     - '1password-cli'
+    - '5ire'
+    - 'ghostty'
+    - 'goreleaser'
+    - 'memo'
+    - 'ngrok'
+    - 'powershell'
+    # Browsers
+    - 'google-chrome'
+    # Communication
+    - 'chatgpt'
+    - 'claude'
+    - 'discord'
+    - 'slack'
+    - 'whatsapp'
+    - 'zoom'
+    # Development tools
+    - 'docker-desktop'
+    - 'figma'
+    - 'visual-studio-code'
+    # Media
+    - 'spotify'
+    - 'transmission'
+    - 'vlc'
+    - 'the-unarchiver'
+    # Security & VPN
+    - '1password'
+    - 'ledger-wallet'
+    - 'tailscale-app'
+    - 'tunnelbear'
+    - 'wifiman'
+    # System utilities
+    - 'vnc-viewer'
+    - 'windows-app'
