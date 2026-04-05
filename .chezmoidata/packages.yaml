@@ -60,6 +60,7 @@ packages:
     - 'docker-desktop'
     - 'figma'
     - 'visual-studio-code'
+    - 'claude-code'
     # Media
     - 'spotify'
     - 'transmission'
